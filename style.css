@@ -1,0 +1,432 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*responzivita prosim zabte mě*/
+
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+        display: block; 
+    }
+
+    .hl-sekce {
+        height: auto;
+        padding: 20px;
+    }
+
+    .rozhrani h1 {
+        font-size: 24px;
+    }
+
+    .necoomnesekce {
+        padding: 20px;
+        margin: 20px;
+    }
+
+    .portfolio-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .portfolio-item {
+        width: 100%;
+    }
+
+    .contact-info,
+    .contact-form form {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .social-icons a {
+        display: block;
+        margin-bottom: 10px;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+    nav ul {
+        flex-direction: row;
+    }
+
+    .hl-sekce {
+        padding: 40px;
+    }
+
+    .portfolio-container {
+        gap: 15px;
+    }
+
+    .portfolio-item {
+        width: 45%;
+    }
+
+    .contact-info,
+    .contact-form form {
+        width: 80%;
+    }
+}
+
+@media (min-width: 1025px) {
+    .portfolio-container {
+        justify-content: space-between;
+    }
+
+    .portfolio-item {
+        width: 30%;
+    }
+
+    .contact-info,
+    .contact-form form {
+        width: 40%;
+    }
+}
+
+/*Navigační bar*/
+
+nav{
+    position: relative;
+    background-color: #171918;
+    padding: 10px;
+}   
+
+ul{
+    list-style: none;
+    display: none; 
+    text-align: center;
+}
+
+ul li{
+    margin: 10px 0px;
+    padding: 0px;
+}
+
+ul li a{
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+    background-color: #171918;
+}
+
+ul li a:hover {
+    background-color: #363131;
+}
+
+
+ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul li {
+    margin:  0px 15px;
+}
+
+ul li a {
+ padding: 10px 20px;
+}
+
+/*Hlavní sekce*/
+
+.hl-sekce{
+    height: 100vh;
+    background-color: url() no-repeat center center/over;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: black;
+    }
+
+    .rozhrani {
+      max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+}
+body {
+    font-family: sans-serif;
+    color: #252726;
+    line-height: 1.5;
+    background-image: url(kolazbgs123.jpg);
+    background-repeat: no-repeat;
+
+ }
+ .menu-img {
+    max-width: 80%;
+ }
+/*Nadpisy*/
+
+
+h2 {
+    text-align: center;
+    color: #000000;
+    font-size: 24px;
+}
+
+.custom-nadpis {
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #ffffff; 
+    text-shadow: 0 4px 6px rgba(0, 0, 0, 0.5), 
+                 0 0 15px rgba(255, 255, 255, 0.7); 
+    letter-spacing: 2px;
+    text-align: center;
+    margin: 20px 0;
+    font-family: 'Arial', sans-serif;
+
+}
+/*tlačítka*/
+.moje-prace{
+    border-radius: 40px;
+    background-color: #171918;
+    color: white;
+    display: inline-block;
+    text-decoration: none;
+    margin-top: 20px;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.zpet-tlacitko{
+    border-radius: 40px;
+    background-color: #171918;
+    color: white;
+    display: inline-block;
+    text-decoration: none;
+    margin-top:20px ;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+    
+}
+.zpet-tlacitko.hover{
+    background-color: #171918;
+}
+/*Footer*/
+.kontakt {
+    background-color: #171918;
+}
+
+/*Něco o mně*/
+
+.necoomne {
+    text-align: center;
+}
+
+.necoomnesekce {
+    background-color: #f4f4f4;
+    padding: 40px 20px;
+    margin: 40px auto;
+    max-width: 800px; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    margin: 20px;
+    background-color: #f4f4f4;
+    border: 2px solid #171918;
+    border-radius: 10px; 
+ }
+
+    .text-container p {
+        text-align: justify; 
+        font-size: 1rem; 
+        line-height: 1.6; 
+        color: #252726; 
+
+    /*Portfolio*/
+}
+
+#portfolio {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #fff;
+}
+
+#portfolio h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.portfolio-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.portfolio-item {
+    background: #f0f0f0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: left;
+}
+
+.portfolio-item img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.portfolio-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #171918;
+}
+
+.portfolio-item p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.portfolio-highlight {
+    margin: 50px auto 0;
+    max-width: 600px;
+    text-align: center;
+}
+
+.portfolio-highlight img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.portfolio-highlight h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.portfolio-highlight p {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+/* Sekce kontakt */
+#contact {
+    padding: 50px 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+#contact h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+
+/*Kontakt info*/
+.contact-info {
+    max-width: 400px;
+    text-align: left;
+}
+
+.contact-info h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.contact-info p {
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+/*Socials*/
+.social-icons a {
+    display: inline-block;
+    margin-right: 10px;
+    text-decoration: none;
+    color: #00796b;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.social-icons a:hover {
+    text-decoration: underline;
+}
+
+/*služby sekce */
+#services {
+    padding: 50px 20px;
+    background-color: #171918; 
+    color: #f4f4f4;
+    text-align: center;
+}
+
+#services h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #f4f4f4; 
+}
+
+/*grid pro služby*/
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/*Služby */
+.service-item {
+    background-color: #333;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.7);
+}
+
+.service-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.service-content {
+    padding: 20px;
+    text-align: left;
+}
+
+.service-content h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #f4f4f4;
+}
+
+.service-content p {
+    font-size: 1rem;
+    color: #f4f4f4;
+    line-height: 1.5;
+}
+
+.footer {
+    text-align: center;
+    color: #f4f4f4;
+    padding: 10px;
+}
